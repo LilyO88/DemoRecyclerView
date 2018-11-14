@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DemoRecyclerView</string>
+    <string name="main_no_students_yet">main no students yet</string>
 </resources>

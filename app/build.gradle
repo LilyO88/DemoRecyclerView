@@ -16,12 +16,25 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
-    // TODO: Add RecyclerView library dependency
-    // TODO: Add ViewModel and LiveData dependency
+    // TOO: Add RecyclerView library dependency
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
+    // TOO: Add ViewModel and LiveData dependency
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
+    //CardView
+    implementation "androidx.cardview:cardview:1.0.0"
 }

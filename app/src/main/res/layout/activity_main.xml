@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- TODO: Refactor layout to use data binding library -->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- TOO: Refactor layout to use data binding library -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.main.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Include a RecyclerView -->
+    <data>
 
-    <!-- TODO: Include a TextView as empty view
-         TODO: Create a drawable for drawableTop -->
+    </data>
 
-    <!-- TODO: Create layout for RecyclerView Item (in another file) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- TOO: Include a RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lstStudents"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <!-- TOO: Include a TextView as empty view
+             TOO: Create a drawable for drawableTop -->
+        <TextView
+            android:id="@+id/lblEmptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_person_add_black_24dp"
+            android:drawablePadding="@dimen/main_lblEmptyView_drawablePadding"
+            android:text="@string/main_no_students_yet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- TODO: Create layout for RecyclerView Item (in another file) -->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

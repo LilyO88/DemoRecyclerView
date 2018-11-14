@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/main_item_margin">
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_item_margin"
+        tools:text="@tools:sample/full_names"
+        />
+
+    <TextView
+        android:id="@+id/lblAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="18"
+        />
+
+    &lt;!&ndash; Texto de prueba tools&ndash;&gt;
+    &lt;!&ndash; &ndash;&gt;
+
+</LinearLayout>-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/llRoot"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/main_item_margin">
+
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/main_item_margin"
+            tools:text="@tools:sample/full_names"
+            />
+
+        <TextView
+            android:id="@+id/lblAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="18"
+            />
+
+        <!-- Texto de prueba tools-->
+        <!-- -->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
